@@ -5,11 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/69b5ae34e5.js" crossorigin="anonymous"></script>
+    <!-- CSS Style -->
     <link rel="stylesheet" href="style.css">
     <title>Wheather App</title>
 </head>
 
 <body>
+    <header>
+        <h1>Weather App</h1>
+        <input type="text" placeholder="Enter your city name...">
+        <button>Send</button>
+        <p class="error"></p>
+    </header>
+
+    <div class="container">
+        <div class="top-section">
+            <h2 class="city-name"></h2>
+            <i class="fa-solid fa-cloud-sun"></i>
+        </div>
+        <div class="bottom-section">
+            <div class="headings">
+                <p>Weather:</p>
+                <p>Temperature:</p>
+                <p>Humidity:</p>
+                <p>Wind speed:</p>
+            </div>
+            <div class="weather">
+                <p class="weather"></p>
+                <p class="temperature"></p>
+                <p class="humidity"></p>
+                <p class="wind-speed"></p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
